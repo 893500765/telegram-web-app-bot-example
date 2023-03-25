@@ -423,6 +423,8 @@
                 alert('WebViewQueryId not defined');
                 return;
             }
+			
+			DemoApp.showAlert(JSON.stringify(DemoApp.initData))
 
             document.querySelectorAll('button').forEach((btn) => btn.disabled = true);
 
@@ -672,7 +674,7 @@
             });
         }
     }
-	DemoApp.showAlert(JSON.stringify(DemoApp.initData))
+	
     const DemoAppMenu = {
         init() {
             DemoApp.init();
